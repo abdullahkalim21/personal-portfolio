@@ -8,6 +8,12 @@
     <!-- Favicons -->
     <!-- <link href="./assets/img/terms-and-policy.png" rel="icon"> -->
     <link rel="shortcut icon" href="assets/img/terms-policy.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- CSS -->
     <style>
         /*--------------------------- General ---------------------------*/
@@ -18,13 +24,14 @@
             --font-color: #272829;
         }
 
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
         body {
             font-family: "Raleway", sans-serif;
             color: var(--font-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
 
         ::selection {
@@ -32,13 +39,51 @@
             color: var(--white);
         }
 
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container.dark {
+            background-color: var(--font-color);
+            color: var(--white);
+        }
+
+        .toggle {
+            width: 3rem;
+            height: 3rem;
+            background-color: #e6e6e6;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            position: fixed;
+            top: 1rem;
+            right: 2rem;
+        }
+
+        .container.dark .toggle {
+            background-color: #4e4e4e;
+            color: var(--white);
+        }
+
+        .toggle i {
+            font-size: 2rem;
+            color: #4e4e4e;
+        }
+
+        .container.dark .toggle i {
+            color: #e6e6e6;
+        }
+
         main {
             max-width: 720px;
         }
 
-        p,
-        li {
-            color: var(--font-color);
+        h2 {
+            text-align: center;
         }
 
         ul {
@@ -61,107 +106,152 @@
 </head>
 
 <body>
-    <header>
-        <h1>Abdullah Kaleem - Terms of Service & Privacy Policy</h1>
-    </header>
-
-    <main>
-        <section id="terms">
-            <h2>Terms of Service</h2>
-            <ol>
-                <li>Introduction</li>
-                <p>These Terms of Service govern your use of this website (the "abdullahkaleem.netlify.app") operated by
-                    <strong><em>Abdullah Kaleem</em></strong>. By accessing or using the Website, you agree to be bound
-                    by these Terms.If you disagree with any part of these Terms, you may not access or use the Website.
-                </p>
-                <li>Use of the Website</li>
-                <p>You may use the Website for lawful purposes only. You may not use the Website:</p>
-                <ul>
-                    <li>In any way that violates any applicable law or regulation.</li>
-                    <li>For any purpose that is prohibited by these Terms.</li>
-                    <li>In any way that may damage, disable, overburden, or impair the Website.</li>
-                    <li>To attempt to gain unauthorized access to the Website or any portion thereof.</li>
-                    <li>To interfere with any other user's enjoyment of the Website.</li>
-                </ul>
-                <br>
-                <li>Intellectual Property</li>
-                <p>The content of the Website, including the design, text, graphics, images, logos, and other materials
-                    , is protected by copyright, trademark, and other intellectual property laws. You may not modify,
-                    copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works
-                    from, transfer, or sell any Content without our prior written consent.</p>
-                <li>Disclaimer</li>
-                <p>The Website is provided "as is" and without warranties of any kind, whether express or implied. We
-                    disclaim all warranties, including, but not limited to, warranties of merchantability, fitness for a
-                    particular purpose, and non-infringement. We do not warrant that the Website will be uninterrupted,
-                    error-free, or virus-free.</p>
-                <li>Limitation of Liability</li>
-                <p>We will not be liable for any damages arising out of or related to your use of the Website,
-                    including, but not limited to, direct, indirect, incidental, consequential, or punitive damages.</p>
-                <li>Termination</li>
-                <p>We may terminate your access to the Website at any time, without notice or reason.</p>
-                <li>Governing Law</li>
-                <p>These Terms shall be governed by and construed in accordance with the laws of [Your State] without
-                    regard to its conflict of law provisions.</p>
-                <li>Entire Agreement</li>
-                <p>These Terms constitute the entire agreement between you and us regarding your use of the Website.</p>
-                <li>Change to the Terms</li>
-                <p>We may revise these Terms at any time by posting the revised Terms on the Website. You are expected
-                    to check this page periodically so you are aware of any changes, as they are binding on you. By
-                    continuing to use the Website after the revised Terms are posted, you agree to be bound by the
-                    revised Terms.</p>
-            </ol>
-        </section>
-
-        <section id="privacy">
-            <h2>Privacy Policy</h2>
-
-            <ol>
-                <li>Introduction</li>
-                <p>This Privacy Policy describes how we collect, use, and disclose your information when you use the
-                    Website.</p>
-                <li>Information We Collect</li>
-                <p>We may collect the following information when you use the Website:</p>
-                <ul>
-                    <li>Personal information you provide through the contact form, such as your name, email address, and
-                        message.</li>
-                    <li>Information collected automatically, such as your IP address, browser type, and operating
-                        system.</li>
+    <div class="container">
+        <!-- Toggle Dark-Light Mode -->
+        <div class="toggle">
+            <i class="fa fa-sun"></i>
+        </div>
+        <header>
+            <br>
+            <h1>Abdullah Kaleem - Terms of Service & Privacy Policy</h1>
+            <br><br>
+        </header>
+        <main>
+            <section id="terms">
+                <h2>Terms of Service</h2>
+                <ol>
+                    <li><b>Introduction</b></li>
+                    <p>These Terms of Service govern your use of this website (the "abdullahkaleem.netlify.app")
+                        operated by
+                        <strong><em>Abdullah Kaleem</em></strong>. By accessing or using the Website, you agree to be
+                        bound
+                        by these Terms.If you disagree with any part of these Terms, you may not access or use the
+                        Website.
+                    </p><br>
+                    <li><b>Use of the Website</b></li>
+                    <p>You may use the Website for lawful purposes only. You may not use the Website:</p>
+                    <ul>
+                        <li>In any way that violates any applicable law or regulation.</li>
+                        <li>For any purpose that is prohibited by these Terms.</li>
+                        <li>In any way that may damage, disable, overburden, or impair the Website.</li>
+                        <li>To attempt to gain unauthorized access to the Website or any portion thereof.</li>
+                        <li>To interfere with any other user's enjoyment of the Website.</li>
+                    </ul>
                     <br>
-                </ul>
-                <li>Use of Your Information</li>
-                <p>We may use the information we collect to:</p>
-                <ul>
-                    <li>Respond to your inquiries through the contact form.</li>
-                    <li>Analyze how you use the Website.</li>
-                    <br>
-                </ul>
-                <li>Disclosure of Your Information</li>
-                <p>We may disclose your information to third-party service providers who assist us in operating the
-                    Website or conducting our business. We will not sell or rent your information to third parties.</p>
-                <li>Data Retention</li>
-                <p>We will retain your information for as long as necessary to fulfill the purposes described in this
-                    Privacy Policy, unless a longer retention period is required or permitted by law.</p>
-                <li>Your Choices</li>
-                <p>You may opt out of receiving marketing communications from us by following the unsubscribe
-                    instructions in those communications.</p>
-                <li>Security</li>
-                <p>We take reasonable steps to protect your information from unauthorized access, disclosure,
-                    alteration, or destruction. However, no website or internet transmission is completely secure.</p>
-                <li>Children's Privacy</li>
-                <p>Our Website is not directed to children under the age of 13. We do not knowingly collect personal
-                    information from children under 13.</p>
-                <li>Changes to the Privacy Policy</li>
-                <p>We may revise this Privacy Policy at any time by posting the revised Privacy Policy on the Website.
-                    You are expected to check this page periodically so you are aware of any changes, as they are
-                    binding on you. By continuing to use the Website after the revised Privacy Policy is posted, you
-                    agree to be bound by the revised Privacy Policy.</p>
-                <li>Contact Us</li>
-                <p>If you have any questions about this Privacy Policy, please contact us at <em><a
-                            href="mailto:abdullahkalim216@gmail.com">abdullahkalim216@gmail.com</a></em></p>
-            </ol>
-        </section>
-    </main>
+                    <li><b>Intellectual Property</b></li>
+                    <p>The content of the Website, including the design, text, graphics, images, logos, and other
+                        materials
+                        , is protected by copyright, trademark, and other intellectual property laws. You may not
+                        modify,
+                        copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative
+                        works
+                        from, transfer, or sell any Content without our prior written consent.</p><br>
+                    <li><b>Disclaimer</b></li>
+                    <p>The Website is provided "as is" and without warranties of any kind, whether express or implied.
+                        We
+                        disclaim all warranties, including, but not limited to, warranties of merchantability, fitness
+                        for a
+                        particular purpose, and non-infringement. We do not warrant that the Website will be
+                        uninterrupted,
+                        error-free, or virus-free.</p><br>
+                    <li><b>Limitation of Liability</b></li>
+                    <p>We will not be liable for any damages arising out of or related to your use of the Website,
+                        including, but not limited to, direct, indirect, incidental, consequential, or punitive damages.
+                    </p><br>
+                    <li>
+                        <p>Termination</p>
+                    </li>
+                    <p>We may terminate your access to the Website at any time, without notice or reason.</p><br>
+                    <li><b>Governing Law</b></li>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of [Your State]
+                        without
+                        regard to its conflict of law provisions.</p><br>
+                    <li><b>Entire Agreement</b></li>
+                    <p>These Terms constitute the entire agreement between you and us regarding your use of the Website.
+                    </p><br>
+                    <li><b>Change to the Terms</b></li>
+                    <p>We may revise these Terms at any time by posting the revised Terms on the Website. You are
+                        expected
+                        to check this page periodically so you are aware of any changes, as they are binding on you. By
+                        continuing to use the Website after the revised Terms are posted, you agree to be bound by the
+                        revised Terms.</p>
+                </ol>
+            </section>
+            <br><br>
 
+            <section id="privacy">
+                <h2>Privacy Policy</h2>
+
+                <ol>
+                    <li><b>Introduction</b></li>
+                    <p>This Privacy Policy describes how we collect, use, and disclose your information when you use the
+                        Website.</p><br>
+                    <li><b>Information We Collect</b></li>
+                    <p>We may collect the following information when you use the Website:</p>
+                    <ul>
+                        <li>Personal information you provide through the contact form, such as your name, email address,
+                            and
+                            message.</li>
+                        <li>Information collected automatically, such as your IP address, browser type, and operating
+                            system.</li>
+                        <br>
+                    </ul>
+                    <li><b>Use of Your Information</b></li>
+                    <p>We may use the information we collect to:</p>
+                    <ul>
+                        <li>Respond to your inquiries through the contact form.</li>
+                        <li>Analyze how you use the Website.</li>
+                        <br>
+                    </ul>
+                    <li><b>Disclosure of Your Information</b></li>
+                    <p>We may disclose your information to third-party service providers who assist us in operating the
+                        Website or conducting our business. We will not sell or rent your information to third parties.
+                    </p><br>
+                    <li><b>Data Retention</b></li>
+                    <p>We will retain your information for as long as necessary to fulfill the purposes described in
+                        this
+                        Privacy Policy, unless a longer retention period is required or permitted by law.</p><br>
+                    <li><b>Your Choices</b></li>
+                    <p>You may opt out of receiving marketing communications from us by following the unsubscribe
+                        instructions in those communications.</p><br>
+                    <li><b>Security</b></li>
+                    <p>We take reasonable steps to protect your information from unauthorized access, disclosure,
+                        alteration, or destruction. However, no website or internet transmission is completely secure.
+                    </p><br>
+                    <li><b>Children's Privacy</b></li>
+                    <p>Our Website is not directed to children under the age of 13. We do not knowingly collect personal
+                        information from children under 13.</p><br>
+                    <li><b>Changes to the Privacy Policy</b></li>
+                    <p>We may revise this Privacy Policy at any time by posting the revised Privacy Policy on the
+                        Website.
+                        You are expected to check this page periodically so you are aware of any changes, as they are
+                        binding on you. By continuing to use the Website after the revised Privacy Policy is posted, you
+                        agree to be bound by the revised Privacy Policy.</p><br>
+                    <li><b>Contact Us</b></li>
+                    <p>If you have any questions about this Privacy Policy, please contact us at <em><a
+                                href="mailto:abdullahkalim216@gmail.com">abdullahkalim216@gmail.com</a></em></p>
+                </ol>
+            </section>
+        </main>
+    </div>
+    <script>
+        const container = document.querySelector(".container");
+        const toggle = document.querySelector(".toggle");
+
+        // Load the user's theme preference from localStorage
+        const currentTheme = localStorage.getItem("theme") || "light";
+        container.classList.add(currentTheme);
+        toggle.firstElementChild.className = currentTheme === "dark" ? "far fa-moon" : "far fa-sun";
+
+        toggle.addEventListener("click", () => {
+            container.classList.toggle("dark");
+            const theme = container.classList.contains("dark") ? "dark" : "light";
+            toggle.firstElementChild.className = theme === "dark" ? "far fa-moon" : "far fa-sun";
+
+            // Save the user's theme preference to localStorage
+            localStorage.setItem("theme", theme);
+        });
+    </script>
 </body>
 
 </html>
