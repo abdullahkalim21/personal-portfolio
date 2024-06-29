@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .professional-experience,
+        .education,
+        .certifications,
+        .skills-tools {
+            width: 100%;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .vertical-div {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 2px;
+            height: 20px;
+            margin: 0px 5px 0px 5px;
+        }
+
+        .hr-div {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 2px;
+        }
+
+        .heading-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skills-tools>p {
+            text-align: left;
+        }
+
+        .print-btn-container {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            bottom: 0;
+            right: 0;
+            margin: 10px 20px;
+        }
+
+        .print-btn {
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #599bff;
+            border: none;
+            /* border: 2px solid black; */
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3), 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        @media print {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .contact-info,
+            .professional-experience,
+            .education,
+            .certifications,
+            .skills-tools {
+                padding: 10px;
+            }
+
+            .heading-div,
+            .hr-div {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div>
+            <h1>Abdullah Kaleem</h1>
+            <h2>Software Engineer</h2>
+        </div>
+        <div class="contact-info">
+            <div class="social-media">
+                <a href="mailto:abdullahkalim216@gmail.com" target="_blank">abdullahkalim216@gmail.com</a>
+                <div class="vertical-div"></div>
+                <a href="https://www.linkedin.com/in/abdullahkalim216/" target="_blank">LinkedIn</a>
+                <div style="margin: 5px;">•</div>
+                <a href="https://www.github.com/abdullahkalim21" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="professional-experience">
+            <h3>PROFESSIONAL EXPERIENCE</h3>
+            <div class="hr-div"></div>
+            <h4>IT Center RYK - (ICR)</h4>
+            <div class="heading-div">
+                <h4>Frontend Web Developer</h4>
+                <p>June 2023 - August 2023</p>
+            </div>
+            <div class="experience-description">
+                <ul>
+                    <li>Worked as a frontend developer during internship at ICR</li>
+                    <li>Collaborated with a skilled team to develop responsive and visually appealing websites.</li>
+                    <li>Implemented engaging user interfaces using HTML, CSS, and JavaScript.</li>
+                </ul>
+            </div>
+            <!-- <div class="heading-div">
+                <h4>Software Engineer - May 2022-Jun 2023</h4>
+            </div>
+            <div class="experience-description">
+                <ul>
+                    <li>Working experience on enterprise product related to "Contract Management System"</li>
+                    <li>Involved in developing and maintainable and robust code using standard techniques.</li>
+                    <li>Experience creating of rich UI application in WPF along with XAML Programming</li>
+                    <li>Extensively worked on MVC and MVVM design pattern.</li>
+                </ul>
+            </div>
+            <h4>Metis International - Islamabad, Pakistan (Oct 2021 to Apr 2022)</h4>
+            <div class="heading-div">
+                <h4>Software Engineer (.Net) - Oct 2021 to Apr 2022</h4>
+            </div>
+            <div class="experience-description">
+                <ul>
+                    <li>Developed Web Application through .Net Core using MVC architecture.</li>
+                    <li>Working experience on product related to "Fleet Management System"</li>
+                    <li>Worked on Azure Function and Windows Services to send IOT devices data from IOTHUB through
+                        SignalR service.</li>
+                    <li>Working of Azure Cosmos DB(MongoDB API) to store data.</li>
+                    <li>Worked on C# code for Auto Scale IOTHUB through Azure (Serverless) Function.</li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="education">
+            <h3>EDUCATION</h3>
+            <div class="hr-div"></div>
+            <!-- <h4>The University of Lahore - Lahore, Pakistan (2023 - Present)</h4> -->
+            <div class="heading-div">
+                <p><strong>The University of Lahore</strong> - <em>Lahore, Pakistan</em></p>
+                <strong><em>2023 - Present</em></strong>
+            </div>
+            <div class="education-description">
+                <p><strong>Major: </strong>Bechlors of Science in Software Engineering</p>
+            </div>
+            <div class="heading-div">
+                <p><strong>Punjab Group of Colleges</strong> - <em>RYK, Pakistan</em></p>
+                <strong><em>2018 - 2020</em></strong>
+            </div>
+            <div class="education-description">
+                <p><strong>Major: </strong>Intermediate in Computer Science</p>
+            </div>
+            <p>During my time at PGC, I embraced college life as a passionate learner with a keen interest in the computer field. Actively participating in coding competitions, workshops, and seminars, I constantly sought opportunities to enhance my skills and stay up-to-date with the latest industry trends.</p>
+
+        </div>
+        <div class="certifications">
+            <h3>CERTIFICATIONS</h3>
+            <div class="hr-div"></div>
+            <ul>
+                <li>Front-End Web Development (ICR)</li>
+                <li>Introduction to Web Programming (CS50)</li>
+            </ul>
+        </div>
+        <div class="skills-tools">
+            <h3>SKILLS & TOOLS</h3>
+            <div class="hr-div"></div>
+            <p><strong>Front-End: </strong>HTML, CSS, Bootstrap, JavaScript (JS)</p>
+            <p><strong>Back-End: </strong>Python, C++</p>
+            <p><strong>Database Language: </strong>SQL, MySQL</p>
+            <p><strong>Tools: </strong>VS Code, GIT, GiHub</p>
+        </div>
+    </div>
+
+    <!-- Print Button -->
+    <div class="print-btn-container">
+        <button class="print-btn" onclick="printResume('container')">Print Resume</button>
+    </div>
+
+    <!-- Script -->
+    <script>
+        function printResume(container) {
+            var resume = document.getElementById("container").innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = resume;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+</body>
+
+</html>
