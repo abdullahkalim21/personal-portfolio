@@ -46,7 +46,7 @@ Here are a few projects that highlight my skills and experience:
 
 ### 1. **Personal Portfolio Website**
 - **Description:** A fully responsive personal website showcasing my projects, skills, and contact information.
-- **Technologies:** HTML, CSS, JavaScript (React.js)
+- **Technologies:** HTML, CSS, JavaScript
 - **Link:** [Portfolio Website](https://abdullahkaleem.netlify.app)
 
 ---
