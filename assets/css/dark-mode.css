@@ -1,0 +1,287 @@
+/* 
+-----------------------------------------------------------
+-------------------------Dark Mode-------------------------
+-----------------------------------------------------------
+*/
+body.dark-mode {
+    --blue: #4e89f7;
+    --blue-hover: #5a9eff;
+    --white: #e4e4e4;
+    --font-color: #1a1a1a;
+    --light-dark: #242424;
+    background-color: #1a1a1a;
+}
+
+/* Hero Section Background Overlay */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background: url("../img/hero-bg.jpg") top right no-repeat;
+    position: relative;
+}
+
+/* Overlay for Dark Mode */
+body.dark-mode #hero::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+body.dark-mode a {
+    color: var(--blue);
+}
+
+body.dark-mode a:hover {
+    color: var(--blue-hover);
+}
+
+body.dark-mode h1,
+h2,
+h3,
+h4,
+h6 {
+    color: var(--white);
+}
+body.dark-mode #hero .container h1 {
+    color: var(--white);
+}
+body.dark-mode #hero .container p {
+    color: var(--white);
+}
+body.dark-mode #main .resume .container .row .col-log-6 .resume-item h5 {
+    background: var(--font-color);
+    color: var(--white);
+}
+
+body.dark-mode p {
+    color: var(--white);
+}
+
+body.dark-mode .back-to-top {
+    background: var(--blue);
+    color: var(--white);
+}
+
+body.dark-mode .back-to-top:hover {
+    background: var(--blue-hover);
+    color: var(--font-color);
+}
+
+body.dark-mode .resume-download-option {
+    background: var(--font-color);
+    color: var(--blue);
+}
+
+body.dark-mode .resume-download-option:hover {
+    background: var(--blue-hover);
+    color: var(--font-color);
+}
+
+body.dark-mode #preloader {
+    background: var(--white);
+}
+
+body.dark-mode #preloader:before {
+    border: 6px solid var(--blue);
+    border-top-color: var(--white);
+    border-bottom-color: var(--white);
+}
+
+body.dark-mode .nav-menu a {
+    color: var(--white);
+    background-color: var(--font-color);
+}
+
+body.dark-mode .nav-menu a span {
+    color: var(--font-color);
+}
+
+body.dark-mode .nav-menu a:hover,
+body.dark-mode .nav-menu .active {
+    background-color: var(--blue);
+    color: var(--font-color);
+}
+
+body.dark-mode #hero h1,
+body.dark-mode #hero p {
+    color: var(--font-color);
+}
+
+body.dark-mode .section-title h2 {
+    color: var(--white);
+}
+
+body.dark-mode .section-title h2::before {
+    background: #555;
+}
+
+body.dark-mode .section-title h2::after {
+    background: var(--blue);
+}
+
+body.dark-mode .about .content h3,
+body.dark-mode .about .content ul li {
+    color: var(--white);
+}
+
+body.dark-mode .facts .count-box {
+    background: var(--font-color);
+}
+
+body.dark-mode .facts .count-box span,
+body.dark-mode .facts .count-box p {
+    color: var(--white);
+}
+
+body.dark-mode .skills .progress-bar-wrap {
+    background: #333;
+}
+
+body.dark-mode .resume .resume-title,
+body.dark-mode .resume .resume-item h4,
+body.dark-mode .resume .resume-item h5,
+body.dark-mode .resume .resume-item ul li {
+    color: var(--white);
+}
+
+body.dark-mode .portfolio #portfolio-flters li {
+    color: var(--white);
+    background-color: var(--font-color);
+}
+
+body.dark-mode .portfolio #portfolio-flters li.filter-active {
+    color: var(--blue);
+}
+
+body.dark-mode .portfolio .portfolio-wrap {
+    background: rgba(36, 37, 38, 0.8);
+}
+
+body.dark-mode .portfolio .portfolio-wrap .portfolio-info h4,
+body.dark-mode .portfolio .portfolio-wrap .portfolio-info p {
+    color: var(--white);
+}
+
+body.dark-mode .portfolio .portfolio-wrap .portfolio-links a {
+    color: var(--font-color);
+}
+
+body.dark-mode .portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: var(--blue-hover);
+}
+
+body.dark-mode .portfolio-details .portfolio-info h3,
+body.dark-mode .portfolio-details .portfolio-info ul li,
+body.dark-mode .portfolio-details .portfolio-description p {
+    color: var(--font-color);
+}
+
+body.dark-mode .services .container .row .col-lg-4 .icon-box {
+    background: var(--font-color);
+    color: var(--white);
+}
+
+body.dark-mode .contact .container .row .col-lg-4 .info .address .bi,
+body.dark-mode .contact .container .row .col-lg-4 .info .email .bi {
+    background: var(--font-color);
+}
+
+body.dark-mode .contact .container .row .col-lg-4 .info .address .bi:hover,
+body.dark-mode .contact .container .row .col-lg-4 .info .email .bi:hover {
+    background: var(--blue-hover);
+    color: var(--font-color);
+}
+
+body.dark-mode .contact .container .row .col-lg-4 .info,
+body.dark-mode .contact .container .row .col-lg-8 form {
+    background: var(--font-color);
+    color: var(--white);
+}
+
+body.dark-mode .contact .container .row .col-lg-8 form .text-center button {
+    background: var(--font-color);
+    color: var(--blue);
+    border: 1px solid var(--white);
+}
+
+body.dark-mode .contact .container .row .col-lg-8 form .text-center button:hover {
+    background: var(--blue-hover);
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+}
+body.dark-mode .portfolio #portfolio-flters {
+    background: var(--font-color);
+}
+
+body.dark-mode .resume .resume-item h5 {
+    color: var(--white);
+    background: var(--font-color);
+}
+
+
+/* Services */
+body.dark-mode .services .icon-box .icon svg path {
+    fill: var(--light-dark);
+}
+
+body.dark-mode .services .iconbox-blue:hover .icon path {
+    fill: #47aeff;
+}
+body.dark-mode .services .iconbox-orange:hover .icon path {
+    fill: #ffa76e;
+}
+body.dark-mode .services .iconbox-pink:hover .icon path {
+    fill: #e80368;
+}
+body.dark-mode .services .iconbox-yellow:hover .icon path {
+    fill: #ffbb2c;
+}
+/* Footer */
+
+body.dark-mode #footer {
+    background: #1d1d1d;
+}
+
+body.dark-mode #footer .container a {
+    background-color: var(--font-color);
+    color: var(--blue);
+}
+
+body.dark-mode #footer .container a:hover {
+    background-color: var(--blue-hover);
+    color: var(--font-color);
+}
+
+body.dark-mode .form-control {
+    background: var(--font-color);
+}
+
+
+/* Theme Toggle Button */
+body.dark-mode .theme-toggle {
+    position: fixed;
+    right: 15px;
+    top: 20px;
+    z-index: 1000;
+    background: var(--light-dark);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background: var(--blue-hover);
+}

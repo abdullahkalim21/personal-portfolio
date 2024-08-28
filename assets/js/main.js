@@ -255,10 +255,30 @@
       mirror: false
     })
   });
-
-  /**
-   * Initiate Pure Counter 
-   */
   new PureCounter();
 
 })()
+
+
+
+// Dark Mode
+const toggleButton = document.getElementById('theme-toggle');
+  
+  toggleButton.addEventListener('click', () => {
+    const isDarkMode = document.body.classList.toggle('dark-mode');
+    
+    if (isDarkMode) {
+      // Load the dark-mode.css file
+      const linkElement = document.createElement('link');
+      linkElement.rel = 'stylesheet';
+      linkElement.href = '../css/dark-mode.css';
+      linkElement.id = 'dark-mode-css';
+      document.head.appendChild(linkElement);
+    } else {
+      // Remove the dark-mode.css file
+      const linkElement = document.getElementById('dark-mode-css');
+      if (linkElement) {
+        document.head.removeChild(linkElement);
+      }
+    }
+  });
