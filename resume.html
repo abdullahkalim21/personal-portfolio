@@ -4,11 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Abdullah Kaleem Resume</title>
     <link rel="shortcut icon" href="./assets/img/cv-resume-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         :root {
             --blue: #0563bb;
@@ -32,12 +30,7 @@
             text-decoration: none;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        h1, h2, h3, h4, h5, h6 {
             font-family: "Raleway", Helvetica, sans-serif;
         }
 
@@ -48,29 +41,37 @@
             text-align: center;
         }
 
-        ul {
+        ul, ol {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+        .certifications > ul {
             list-style-type: none;
+            margin-left: 20px;
+            text-align: center;
         }
 
         .container {
             width: 60%;
-            margin: 0 auto;
+            margin: 10px auto;
+            padding: 20px;
+            border-radius: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
-        .professional-experience,
-        .education,
-        .certifications,
-        .skills-tools {
+        .section {
             width: 100%;
+            margin-bottom: 20px;
         }
 
         .contact-info {
             display: flex;
             align-items: center;
-            margin: 0 auto;
+            justify-content: center;
         }
 
         .social-media {
@@ -81,45 +82,38 @@
         .social-media a {
             text-decoration: none;
             color: var(--blue);
+            margin: 0 5px;
         }
 
-        .vertical-div {
+        .divider {
             background-color: rgba(0, 0, 0, 0.5);
-            width: 2px;
-            height: 20px;
-            margin: 0px 5px 0px 5px;
-        }
-
-        .hr-div {
-            background-color: rgba(0, 0, 0, 0.5);
-            width: 100%;
             height: 2px;
+            margin: 10px 0;
         }
 
-        .heading-div {
+        .heading-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 10px;
         }
 
-        .skills-tools>p {
+        .skills p {
             text-align: left;
+            margin: 5px 0;
         }
 
         .print-btn-container {
             position: fixed;
-            width: 100px;
-            height: 100px;
-            bottom: 0;
-            right: 0;
-            margin: 10px 20px;
+            bottom: 20px;
+            right: 20px;
         }
 
         .print-btn {
             border-radius: 20px;
             text-align: center;
             cursor: pointer;
-            padding: 10px;
+            padding: 10px 20px;
             background-color: var(--blue);
             color: var(--white);
             border: none;
@@ -135,138 +129,117 @@
                 margin: 0;
                 padding: 0;
             }
-
-            .contact-info,
-            .professional-experience,
-            .education,
-            .certifications,
-            .skills-tools {
-                padding: 10px;
+            h1, h2 {
+                margin: 5px auto;
             }
 
-            .heading-div,
-            .hr-div {
-                margin: 10px;
+            .container {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+            }
+
+            .print-btn-container {
+                display: none;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="container" id="container">
-        <div>
+    <div class="container" id="resume-container">
+        <header>
             <h1>Abdullah Kaleem</h1>
             <h2>Software Engineer</h2>
-        </div>
-        <div class="contact-info">
+        </header>
+
+        <section class="section contact-info">
             <div class="social-media">
-                <a href="mailto:abdullahkalim216@gmail.com" target="_blank">abdullahkalim216@gmail.com</a>
-                <div class="vertical-div"></div>
+                <a href="mailto:abdullahkalim216@gmail.com" target="_blank">Gmail</a>
                 <a href="https://www.linkedin.com/in/abdullahkalim216/" target="_blank">LinkedIn</a>
-                <div style="margin: 5px;">•</div>
                 <a href="https://www.github.com/abdullahkalim21" target="_blank">GitHub</a>
             </div>
-        </div>
-        <div class="education">
-            <h3>EDUCATION</h3>
-            <div class="hr-div"></div>
-            <div class="heading-div">
-                <p><strong>The University of Lahore</strong> - <em>Lahore, Pakistan</em></p>
-                <strong><em>2023 - Present</em></strong>
-            </div>
-            <div class="education-description">
-                <p><strong>Major: </strong>Bechlors of Science in Software Engineering</p>
-            </div>
-            <p>During my first year I made 2 projects with my fellows</p>
-            <ol>
-                <li>Developed a program that calculates factory workers weekly salary based on the input of their designation and working hours in a week</li>
-                <li>Developed a program for Hospital Admins to have a record of all the patients and their medical conditions. Also the program had Doctors information of that Hospital</li>
-            </ol>
-            <div class="heading-div">
-                <p><strong>Punjab Group of Colleges</strong> - <em>RYK, Pakistan</em></p>
-                <strong><em>2018 - 2020</em></strong>
-            </div>
-            <div class="education-description">
-                <p><strong>Major: </strong>Intermediate in Computer Science</p>
-            </div>
-            <p>During my time at PGC, actively participated in coding competitions, workshops, and seminars</p>
-        </div>
-        <div class="professional-experience">
-            <h3>PROFESSIONAL EXPERIENCE</h3>
-            <div class="hr-div"></div>
-            <h4>IT Center RYK - (ICR)</h4>
-            <div class="heading-div">
-                <h4>Frontend Web Developer</h4>
-                <p>June 2023 - August 2023</p>
-            </div>
-            <div class="experience-description">
-                <ul>
-                    <li>Worked as a frontend developer during internship at ICR</li>
-                    <li>Collaborated with a skilled team to develop responsive and visually appealing websites.</li>
-                    <li>Implemented engaging user interfaces using HTML, CSS, and JavaScript.</li>
-                </ul>
-            </div>
-        </div>
+        </section>
 
-        <div>
-            <h3>PROJECTS</h3>
-            <div class="hr-div"></div>
-            <div class="heading-div">
+        <section class="section education">
+            <h3>Education</h3>
+            <div class="divider"></div>
+            <div class="heading-row">
+                <p><strong>BSSE</strong> - <em>The University of Lahore</em></p>
+                <p><em>2023 - Present</em></p>
+            </div>
+            <p><strong>Educational Projects</strong></p>
+            <ol>
+                <li>Program to calculate factory workers' weekly salary based on designation and working hours.</li>
+                <li>Hospital Admin program to manage patient and doctor records.</li>
+            </ol>
+        </section>
+
+        <section class="section professional-experience">
+            <h3>Professional Experience</h3>
+            <div class="divider"></div>
+            <div class="heading-row">
+                <h4>Frontend Web Developer - <em>ICR</em></h4>
+                <p>2023</p>
+            </div>
+            <ul>
+                <li>Developed responsive and visually appealing websites.</li>
+                <li>Implemented user interfaces using HTML, CSS, and JavaScript.</li>
+            </ul>
+        </section>
+
+        <section class="section projects">
+            <h3>Development Projects</h3>
+            <div class="divider"></div>
+            <div class="heading-row">
                 <strong>Personal Portfolio Website</strong>
                 <a href="https://abdullahkaleem.netlify.app/"><i class="fa-solid fa-link"></i> Visit Here</a>
             </div>
-            <div class="education-description">
-                <ul style="list-style: none;">
-                    <li>Structured the website to effectively showcase personal background, professional experience, skills, and projects making it easy for visitors to understand my qualifications and achievements</li>
-                    <li>Made it responsive using HTML, CSS, and JavaScript, ensuring optimal performance and user experience across all devices, including desktops, tablets, and smartphones</li>
-                    <li>Deployed the website to Netlify, ensuring that it updates from GitHub Repository automatically & reflects changes on the live website. Configured Netlify's built-in features like HTTPS to enhance security</li>
-                </ul>
-            </div>
-            <div class="heading-div">
+            <ul>
+                <li>Responsive website using HTML, CSS, and JavaScript.</li>
+                <li>Deployed on Netlify with auto-update from GitHub.</li>
+            </ul>
+            <div class="heading-row">
                 <strong>Educare Courses & Community Landing Page</strong>
                 <a href="https://educare-courses.netlify.app/"><i class="fa-solid fa-link"></i> Visit Here</a>
             </div>
-            <div class="education-description">
-                <ul style="list-style: none;">
-                    <li>Developed a custom landing page for courses promotion and community to join for enhancing skills </li>
-                    <li>Used <em>Web3Forms</em> to receives visitors messages and email to connect and communicate</li>
-                    <li>Implemented custom CSS properties for styling and animation</li>
-                    <li>Deployed the page to <em>Netlify</em> to make it available to be see online</li>
-                </ul>
-            </div>
-        </div>
-        <div class="certifications">
-            <h3>CERTIFICATIONS</h3>
-            <div class="hr-div"></div>
+            <ul>
+                <li>Landing page for course promotion and community building.</li>
+                <li>Used Web3Forms for communication and implemented custom CSS.</li>
+            </ul>
+        </section>
+
+        <section class="section certifications">
+            <h3>Certifications</h3>
+            <div class="divider"></div>
             <ul>
                 <li>Front-End Web Development - ICR</li>
                 <li>Introduction to Web Programming - CS50</li>
                 <li>Responsive Web Design - freeCodeCamp.org</li>
                 <li>Foundation of Cybersecurity - Coursera</li>
             </ul>
-        </div>
-        <div class="skills-tools">
-            <h3>SKILLS & TOOLS</h3>
-            <div class="hr-div"></div>
-            <p><strong>Web Development: </strong>HTML, CSS, Bootstrap, JavaScript (JS)</p>
+        </section>
+
+        <section class="section skills">
+            <h3>Skills & Tools</h3>
+            <div class="divider"></div>
+            <p><strong>Web Development: </strong>HTML, CSS, TailwindCSS, JavaScript</p>
             <p><strong>Programming: </strong>C++</p>
-            <p><strong>Tools: </strong>Linux, VS Code, GIT, GiHub</p>
-        </div>
+            <p><strong>Tools: </strong>VS Code, Git, GitHub, Linux</p>
+        </section>
     </div>
 
-    <!-- Print Button -->
     <div class="print-btn-container">
-        <button class="print-btn" onclick="printResume('container')">Print Resume</button>
+        <button class="print-btn" onclick="printResume()">Print Resume</button>
     </div>
 
-    <!-- Script -->
     <script>
-        function printResume(container) {
-            var resume = document.getElementById("container").innerHTML;
-            var originalContents = document.body.innerHTML;
-            document.body.innerHTML = resume;
+        function printResume() {
+            const resumeContent = document.getElementById("resume-container").innerHTML;
+            const originalContent = document.body.innerHTML;
+            document.body.innerHTML = resumeContent;
             window.print();
-            document.body.innerHTML = originalContents;
+            document.body.innerHTML = originalContent;
         }
     </script>
 </body>
