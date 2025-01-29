@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdullah Kaleem Resume</title>
     <link rel="shortcut icon" href="./assets/img/cv-resume-icon.png" type="image/x-icon">
+    <meta name="description" content="Welcome to Abdullah Kaleem portfolio! Abdullah Kaleem is a web developer, video editor, cyber security and BS Software Engineering student specializing in different programming languages like C++, SQL and JavaScript for Web Development. Explore Abdullah Kaleem's projects and skills to discover how Abdullah Kaleem can contribute to your needs.">
+    <meta name="keywords" content="nextjs, frontend web developer, web development, responsive design, HTML, CSS, JavaScript, user interface, performance optimization, cross-browser compatibility, cyber security, security analyst, video editor, graphics designer, 3d animator">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -65,6 +67,10 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
+        .project_sec {
+            margin-bottom: 10px;
+        }
+
         .section {
             width: 100%;
             margin-bottom: 20px;
@@ -97,7 +103,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .skills p {
@@ -201,10 +207,12 @@
                 <p><strong>BSSE</strong> - <em>The University of Lahore</em></p>
                 <p><em>2023 - Present</em></p>
             </div>
-            <p><strong>Educational Projects</strong></p>
+            <p><strong>Relevant Coursework:</strong> Object-Oriented Programming, Data Structures, Software Engineering</p>
+            <p><strong>Academic Projects</strong></p>
             <ol>
-                <li>Program to calculate factory workers' weekly salary based on designation and working hours.</li>
-                <li>Hospital Admin program to manage patient and doctor records.</li>
+                <li>Hospital Management System (C++) - Admin's management system for patient admission, discharge, searching, and displaying patient and doctor details</li>
+                <li>Salary Calculator Application - Automated payroll calculations for 50+ factory worker roles</li>
+                <li>Scientific Calculator - An application with functionalities for basic and advanced mathematical operations, along with history management implementing OOP concepts.</li>
             </ol>
         </section>
 
@@ -216,49 +224,75 @@
                 <p>2023</p>
             </div>
             <ul>
-                <li>Developed responsive and visually appealing websites.</li>
-                <li>Implemented user interfaces using HTML, CSS, and JavaScript.</li>
+                <li>Developed responsive and visually appealing websites uisng HTML, CSS, JS.</li>
+                <li>Implemented cross-browser compatible layouts achieving +90% Lighthouse accessibility scores.</li>
             </ul>
         </section>
 
         <section class="section projects">
             <h3>Development Projects</h3>
             <div class="divider"></div>
-            <div class="heading-row">
-                <strong>Personal Portfolio Website</strong>
-                <a href="https://abdullahkaleem.netlify.app/"><i class="fa-solid fa-link"></i> Visit Here</a>
+
+            <div class="project_sec">
+                <div class="heading-row">
+                    <strong>NextJS Website</strong>
+                </div>
+                <ul>
+                    <li>Developed an animated and responsive website using Next.js.</li>
+                    <li>Implemented server-side rendering for improved performance and SEO.</li>
+                    <li>Utilized Vercel for seamless deployment and continuous integration.</li>
+                    <li>Integrated animations using TailwindCSS and JavaScript for enhanced user experience.</li>
+                </ul>
             </div>
-            <ul>
-                <li>Responsive website using HTML, CSS, and JavaScript.</li>
-                <li>Deployed on Netlify with auto-update from GitHub.</li>
-            </ul>
-            <div class="heading-row">
-                <strong>Educare Courses & Community Landing Page</strong>
-                <a href="https://educare-courses.netlify.app/"><i class="fa-solid fa-link"></i> Visit Here</a>
+            <div class="project_sec">
+                <div class="heading-row">
+                    <strong>Personal Portfolio Website</strong>
+                    <a href="https://abdullahkaleem.netlify.app/"><i class="fa-solid fa-link"></i> Visit Here</a>
+                </div>
+                <ul>
+                    <li>Developed mobile-first personal portfolio with CSS Grid and Flexbox.</li>
+                    <li>Deployed CI/CD pipeline using GitHub Actions and Netlify.</li>
+                </ul>
             </div>
-            <ul>
-                <li>Landing page for course promotion and community building.</li>
-                <li>Used Web3Forms for communication and implemented custom CSS.</li>
-            </ul>
+            <div class="project_sec">
+                <div class="heading-row">
+                    <strong>Text Formatter Browser Extension</strong>
+                    <a href="https://github.com/abdullahkalim21/text-formatter"><i class="fa-solid fa-link"></i> Visit Here</a>
+                </div>
+                <ul>
+                    <li>Developed a minimalist Chrome extension for effortless text formatting, allowing users to transform text into various cases (UPPERCASE, lowercase, Pascal Case...) and copy the results directly from the popup.</li>
+                    <li>Implemented popup-based interface for quick access and user-friendly experience.</li>
+                </ul>
+            </div>
+            <div class="project_sec">
+                <div class="heading-row">
+                    <strong>Educare Courses & Community Landing Page</strong>
+                    <a href="https://educare-courses.netlify.app/"><i class="fa-solid fa-link"></i> Visit Here</a>
+                </div>
+                <ul>
+                    <li>Landing page for course promotion and community building.</li>
+                    <li>Used Web3Forms for communication and implemented custom CSS.</li>
+                </ul>
+            </div>
         </section>
 
         <section class="section certifications">
             <h3>Certifications</h3>
             <div class="divider"></div>
             <ul>
-                <li>Front-End Web Development - ICR</li>
-                <li>Introduction to Web Programming - CS50</li>
-                <li>Responsive Web Design - freeCodeCamp.org</li>
-                <li>Foundation of Cybersecurity - Coursera</li>
+                <li>Professional Web Development Certification - ICR</li>
+                <li>CS50x: Introduction to Computer Science - Harvard University</li>
+                <li>Responsive Web Design Certification - freeCodeCamp</li>
+                <li>Google Cybersecurity Professional Certificate - Coursera</li>
             </ul>
         </section>
 
         <section class="section skills">
             <h3>Skills & Tools</h3>
             <div class="divider"></div>
-            <p><strong>Web Development: </strong>HTML, CSS, TailwindCSS, JavaScript</p>
-            <p><strong>Programming: </strong>C++</p>
+            <p><strong>Web Development: </strong>HTML, CSS, TailwindCSS, JavaScript, NextJS</p>
             <p><strong>Tools: </strong>VS Code, Git, GitHub, Linux</p>
+            <p><strong>Design: </strong>Figma, Photoshop, Illustrator</p>
         </section>
     </div>
     <button class="theme-toggle" onclick="theme_toggle()"><i class="fa fa-moon"></i></button>
